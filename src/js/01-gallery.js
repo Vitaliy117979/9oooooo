@@ -12,7 +12,7 @@ console.log(galleryItems);
 const galleryList = document.querySelector(".gallery");
 console.log(SimpleLightbox)
 
-const markup = galleryItems
+const markups = galleryItems
   .map(
     (items) =>
       `<li class="gallery__items">
@@ -23,6 +23,6 @@ const markup = galleryItems
   )
   .join("");
   
-galleryList.innerHTML = markup;
+galleryList.innerHTML = markups;
 new SimpleLightbox('.gallery a', { captionsData: "alt", captionPosition: 'bottom', captionDelay: 250 });
 
